@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="Titan">
 <link rel="apple-touch-icon" sizes="180x180" href="image.PNG">
 <link rel="icon" type="image/png" href="image.PNG">
-<title>Titan Subzero Gold & Forex AI</title>
+<title> Nard Gold & Forex AI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=JetBrains+Mono:ital,wght@0,500;0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -488,7 +488,7 @@ input:focus, select:focus { border-color: var(--gold-primary); box-shadow: 0 0 1
       <div class="robot-meta">
         <img src="image.PNG" class="robot-thumb" alt="Titan Scalper EA">
         <div>
-          <div class="robot-name">Titan Scalper EA</div>
+          <div class="robot-name">Nard Scalper fx</div>
           <div class="robot-status-line">● Live Deriv AI Engine Connected</div>
         </div>
       </div>
@@ -507,8 +507,8 @@ input:focus, select:focus { border-color: var(--gold-primary); box-shadow: 0 0 1
     <div class="brand-title">
       <div class="brand-icon">❄</div>
       <div>
-        <h1>TITAN SUBZERO AI</h1>
-        <div class="sub-tag">METALLIC GOLD & FOREX CYBER ENGINE • RICHY / TITAN FX</div>
+        <h1>NARD SUPER AI</h1>
+        <div class="sub-tag">METALLIC GOLD & FOREX CYBER ENGINE • JACKBOII / NARD FX</div>
       </div>
     </div>
     <div id="status" class="status-badge">
@@ -613,12 +613,12 @@ input:focus, select:focus { border-color: var(--gold-primary); box-shadow: 0 0 1
 
     <!-- Signal Cards Section -->
     <section id="cards" class="cards-grid">
-      <div class="empty-state">Tap “START EA SCANNER” above to launch Titan Subzero AI engine.</div>
+      <div class="empty-state">Tap “START EA SCANNER” above to launch Nard  AI engine.</div>
     </section>
   </div>
 
   <div class="footer-text">
-    Risk Disclaimer: Titan Subzero signals combine quantitative technical analysis with fundamental economic metrics. Always confirm broker spreads and market conditions before execution.
+    Risk Disclaimer: Nard Gold signals combine quantitative technical analysis with fundamental economic metrics. Always confirm broker spreads and market conditions before execution.
   </div>
 
 </main>
@@ -637,11 +637,11 @@ document.getElementById("entranceStartBtn")?.addEventListener("click", launchEA)
 document.getElementById("entranceQuotesBtn")?.addEventListener("click", launchEA);
 document.getElementById("entranceStopBtn")?.addEventListener("click", () => {
   stopScanner();
-  alert("Titan Scalper EA stopped.");
+  alert("Nard Scalper EA stopped.");
 });
 document.getElementById("entranceRemoveBtn")?.addEventListener("click", () => {
   clearSignalCache();
-  alert("Titan Scalper EA signal cache cleared.");
+  alert("Nard Scalper EA signal cache cleared.");
 });
 
 /* ORIGINAL LOGIC */
@@ -654,7 +654,7 @@ let activeNewsEvents = [];
 let currentTabFilter = "all";
 
 // Persistent signal locks: an entry is created once and reused until invalidated.
-const SIGNAL_STORAGE_KEY = "titanSubzero_lockedSignals_v2";
+const SIGNAL_STORAGE_KEY = "nard_lockedSignals_v2";
 function loadLockedSignals() {
  try {
    const saved = JSON.parse(localStorage.getItem(SIGNAL_STORAGE_KEY) || "{}");
@@ -664,7 +664,7 @@ function loadLockedSignals() {
 let lockedSignals = loadLockedSignals();
 function saveLockedSignals() {
  try { localStorage.setItem(SIGNAL_STORAGE_KEY, JSON.stringify(lockedSignals)); }
- catch (e) { console.warn("Titan could not save locked signals:", e); }
+ catch (e) { console.warn("Nard could not save locked signals:", e); }
 }
 function clearSignalCache() {
  lockedSignals = {};
